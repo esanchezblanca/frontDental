@@ -1,0 +1,23 @@
+.header{
+    /* background-color: grey;
+    display:flex; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(111, 199, 250);
+}
+
+.logoImg{
+    display:flex;
+    width: 4em;
+    height:4em;
+    margin-left: 2em;
+}
+
+.headerTitle{
+    color: black;
+    position: absolute;
+    margin-left: 50%;
+    font-weight: bold;
+}
