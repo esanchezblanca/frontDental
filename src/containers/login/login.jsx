@@ -1,38 +1,47 @@
 import React from 'react';
 import "./login.css";
-import { Form, Input, Button, Checkbox } from 'antd';
+import axios from 'axios';
+import { notification } from 'antd';
 import { useHistory } from 'react-router-dom';
 
 
-const layout = {
-  labelCol: {
-    span: 8,
-  },
-  wrapperCol: {
-    span: 16,
-  },
-};
-const tailLayout = {
-  wrapperCol: {
-    offset: 8,
-    span: 16,
-  },
-};
-const Login = () => {
 
+const Login = () => {
+  const history = useHistory();
+  const handleSubmit = async (event) => {
+    try {
+      event.preventDefault();
+      const form = event.target;
+      const login = {
+        mail: form.mail.value,
+        password: form.password.value,
+      }
+      console.log(login.mail);
+      await axios.post('http://localhost:3200/customers/login', login)//poner luego ruta localhost
+      notification.success({ message: 'Logged in' })
+      history.push('/appointment')
+    }
+    catch (error) {
+      console.error(error)
+      notification.error({ message: 'Cannot log in', description: 'Check your credentials' })
+    }
+  }
+
+  const GoRegister = () => {
+    history.push('/register')
+  }
+
+  //encriptar antes de enviar
   return (
-    <div className="divLogin">
-        <input className="loginInput" type="email" name="email" placeholder="Email/Usuario"/>
-        <input className="loginInput" type="password" name="password" placeholder="Contraseña"/>
-        <a className="register" onClick={GoRegister}>No tengo cuenta</a>
-        <button className="loginButton" type="submit">Enviar</button>
-    </div>
+    <form className="divLogin" onSubmit={handleSubmit}>
+      <input className="loginInput" type="email" name="mail" placeholder="Email/Usuario" />
+      <input className="loginInput" type="password" name="password" placeholder="Contraseña" />
+      <a className="register" onClick={GoRegister}>No tengo cuenta</a>
+      <button className="loginButton" type="submit">Enviar</button>
+    </form>
   );
 };
 
-function GoRegister () {
-    const history = useHistory();
-    history.push('/register')
-}
+
 
 export default Login;

@@ -1,11 +1,12 @@
 .header{
-    /* background-color: grey;
-    display:flex; */
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(111, 199, 250);
+    /* background-color: rgb(111, 199, 250); */
+    /* background: #f46b45;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #eea849, #f46b45); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: rgb(118, 194, 181);
 }
 
 .logoImg{
