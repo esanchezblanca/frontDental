@@ -2,8 +2,8 @@ import React from 'react';
 import "./register.css";
 import axios from 'axios';
 import { notification } from 'antd';
+import 'antd/dist/antd.css';
 import { useHistory } from 'react-router-dom';
-
 
 
 const Register = () => {
@@ -23,11 +23,11 @@ const Register = () => {
 
       }
       await axios.post('http://localhost:3200/customers/register', register).then(res => {
-        notification.success({ message: 'Signed in'})
+        notification.success({ message: 'Registered'})
         history.push('/login')
       })
       .catch(err => {
-        notification.error({ message: 'Cannot register', description: 'Error on register' })
+        notification.error({ message: 'Cannot register', description: 'Error on register'})
       })
       
     }
