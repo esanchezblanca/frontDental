@@ -1,37 +1,25 @@
-# Clínica dental backend
-
-Proyecto que recrea la parte backend de una app de citas de una consulta de dentistas. 
-
+# App clínica dental
+Proyecto que recrea la parte frontend con react de una app de citas de una consulta de dentistas. 
 
 ### Requisitos e instalación 
-
-Para poder trabajar con el backend de la clínica dental será necesario tener instalado Visual Studio Code, Postman, SQL Workbench y hará falta también trabajar con nodemon y express.
-
 Descargue el zip del proyecto, descomprímalo y ábralo con Visual Studio Code o cualquier programa similar.
 
-Necesitará Postman para enviar peticiones al servidor, como por ejemplo la de crear un usuario.
+Al abrir el proyecto verá que está dividido en dos carpetas: clínicareact y backend.
+Abra un terminal en Visual Studio situándose en la carpeta **clinicareact** y escriba **npm start** para que el navegador abra en localhost el proyecto. Abra un segundo terminal situándose en la carpeta **backend** y arranque el servidor con el comando **nodemon app.js**.
 
+### Funcionamiento
+Vamos a describir un ejemplo de uso de la aplicación de citas.
+Al arrancar el servidor y la aplicación podrá ver que se abre la página por el home. En esta página aparece una barra de navegación y varios elementos en el cuerpo de la página que nos aportan información sobre la clínica.
 
+En caso de no tener usuario, podemos dirigirnos al botón **register** que está situado en la esquina superior derecha, en la barra de navegación. Nos pedirá una serie de datos para registrarnos. Puede introducirlos.
+Sin embargo, para obtener una experiencia mejor, recomendamos utilizar uno de los usuarios que ya vienen registrados en el botón **Login**.
+	Mail: **ele.sp@hotmail.com**
+	Contraseña: **pruebaPassword**
 
-### Descripción del proyecto
-
-El primer punto que se puede destacar de este proyecto es que se divide en dos roles de usuarios (customers): Admin y Guest.
-
-El usuario con id = 1 es el Admin y el resto que se creen después llevarán el rol de Guest.
-
-Los clientes o usuarios con rol Guest tienen acceso limitado a las distintas funciones que permite hacer la app. Los clientes solo podrán darse de alta (/register), hacer login y logout, consultar citas pendientes (/showPending), crear y eliminar citas.
-
-Habrá una tabla que contenga el historial de los pacientes a la que solo tendrá acceso el Admin con una verificación especial de su token. Aquí el Admin podrá crear, eliminar y consultar todos los registros relativos al historial personal de cada uno de los pacientes.
-
-Solo el Admin podrá listar por id y a todos los usuarios de la lista. Por otra parte, también será solo competencia del Admin la consulta de las citas pasadas.
-
-### Diagrama de la base de datos 
-
-
-
-
+Una vez enviado este formulario, nos aparecerá una nueva página de citas con dos tarjetas: añadir cita y ver las pendientes.
+En la página de añadir cita encontramos un calendario y un desplegable con los servicios de los que dispone la clínica.
+En ver citas pendientes recibiremos la información listada de las citas futuras.
 
 ## Licencia 
 
-Este proyecto ha sido realizado por Elena Sánchez de la Blanca y está sujeto a la licencia MIT. Para obtener más información, por favor diríjase al archivo LICENSE que encontrará adjunto. 
-
+Este proyecto ha sido realizado por Elena Sánchez de la Blanca y está sujeto a la licencia MIT. Para obtener más información, por favor diríjase al archivo LICENSE que encontrará adjunto.
