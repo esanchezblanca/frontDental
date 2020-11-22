@@ -13,11 +13,13 @@ function App() {
   const [user, setUser] = useState(null);
 
   return (
-    <div className="App">
+        <div className="App">
       <BrowserRouter>
         <Header></Header>
         <Switch>
-                    
+
+
+         {/*Rutas a los componentes  */}
           <Route path="/login" component={Login} exact />
           <Route path="/appointment" component={Appointment} exact />
           <Route path="/home" component={Home} exact />

@@ -1,6 +1,8 @@
 import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 
+
+// Creamos el menú desplegable
 const DropBar = () => {
     return (
         <Menu>

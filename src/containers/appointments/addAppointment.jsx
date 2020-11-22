@@ -5,7 +5,7 @@ import { DownOutlined } from '@ant-design/icons';
 import moment from 'moment';
 import DropBar from '../../components/dropdown'
 
-
+//Se crea una clase para guardar fechas del calendario
 export default class AddAppnt extends React.Component {
     state = {
         value: moment('2017-01-25'),

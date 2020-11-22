@@ -6,11 +6,12 @@ import { useHistory } from 'react-router-dom';
 import 'antd/dist/antd.css';
 import { useEffect, useState } from 'react';
 
+//Creamos la plantilla de las notificaciones que aparecerán en el login
 const openNotification = () => {
   notification.open({
-    message: 'Notification Title',
+    message: 'Título',
     description:
-      'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+      'Notificación',
     onClick: () => {
       console.log('Notification Clicked!');
     },
@@ -27,6 +28,7 @@ const Login = (props) => {
         mail: form.mail.value,
         password: form.password.value,
       }
+      //Se hace la petición asíncrona al back
       await axios.post('http://localhost:3200/customers/login', login)
         .then(res => {
           localStorage.setItem('user',res.data.user.id)
@@ -46,11 +48,12 @@ const Login = (props) => {
     }
   }
 
+  //creamos variable para que al hacer click en no tengo cuenta redirija
   const GoRegister = () => {
     history.push('/register')
   }
 
-  //encriptar antes de enviar
+  //Formulario de acceso clientes: login
   return (
     <form className="divLogin" onSubmit={handleSubmit}>
       <input className="loginInput" type="email" name="mail" placeholder="Email/Usuario" />

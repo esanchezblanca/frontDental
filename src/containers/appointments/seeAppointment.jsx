@@ -18,6 +18,7 @@ export default class SeeAppointment extends React.Component {
         this.getAppointment();
     }
 
+    //Hace llamada a backend para listar citas pendientes
     getAppointment() {
         const user = localStorage.getItem('user')
         axios.get(`http://localhost:3200/appointment/showPending/${user}`)

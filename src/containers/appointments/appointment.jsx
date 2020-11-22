@@ -25,7 +25,7 @@ const Appointment = () => {
    
 
 
-
+//Creamos dos tarjetas que permiten elegir si creamos nueva cita o listamos pendientes
     return (
         
         <div>

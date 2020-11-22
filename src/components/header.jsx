@@ -3,6 +3,8 @@ import {NavLink} from 'react-router-dom';
 import './header.css';
 import logo from '../img/logohdr.png';
 
+
+//creamos el header para todas las páginas
 const Header = () => {
     return (
         <header className="header">
