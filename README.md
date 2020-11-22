@@ -3,8 +3,9 @@ Proyecto que recrea la parte frontend con react de una app de citas de una consu
 
 ### Requisitos e instalación 
 Descargue el zip del proyecto, descomprímalo y ábralo con Visual Studio Code o cualquier programa similar.
+Descargue también el backend del siguiente enlace: https://github.com/esanchezblanca/backendDentista.git
 
-Al abrir el proyecto verá que está dividido en dos carpetas: clínicareact y backend.
+Al abrir las dos carpetas del proyecto: clínicareact y backendDentista.
 Abra un terminal en Visual Studio situándose en la carpeta **clinicareact** y escriba **npm start** para que el navegador abra en localhost el proyecto. Abra un segundo terminal situándose en la carpeta **backend** y arranque el servidor con el comando **nodemon app.js**.
 
 ### Funcionamiento
