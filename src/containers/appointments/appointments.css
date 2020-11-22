@@ -17,6 +17,38 @@
     
 }
 
+.addAppntm:hover{
+        color: black;
+        cursor: pointer;
+        background-color:  rgb(42, 158, 139);
+}
+
 .cardTitle{
     background-color:  rgba(42, 158, 139, 0.411);
+}
+
+.calendario {
+    margin-top: 10%;
+    margin-left: 4%;
+    width: 500px;
+    height: 200px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.bigDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.dropOpt{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.citaDetalle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
 }

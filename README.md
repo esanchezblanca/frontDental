@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Clínica dental backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto que recrea la parte backend de una app de citas de una consulta de dentistas. 
 
-## Available Scripts
 
-In the project directory, you can run:
+### Requisitos e instalación 
 
-### `npm start`
+Para poder trabajar con el backend de la clínica dental será necesario tener instalado Visual Studio Code, Postman, SQL Workbench y hará falta también trabajar con nodemon y express.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Descargue el zip del proyecto, descomprímalo y ábralo con Visual Studio Code o cualquier programa similar.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Necesitará Postman para enviar peticiones al servidor, como por ejemplo la de crear un usuario.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Descripción del proyecto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El primer punto que se puede destacar de este proyecto es que se divide en dos roles de usuarios (customers): Admin y Guest.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+El usuario con id = 1 es el Admin y el resto que se creen después llevarán el rol de Guest.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Los clientes o usuarios con rol Guest tienen acceso limitado a las distintas funciones que permite hacer la app. Los clientes solo podrán darse de alta (/register), hacer login y logout, consultar citas pendientes (/showPending), crear y eliminar citas.
 
-### `npm run eject`
+Habrá una tabla que contenga el historial de los pacientes a la que solo tendrá acceso el Admin con una verificación especial de su token. Aquí el Admin podrá crear, eliminar y consultar todos los registros relativos al historial personal de cada uno de los pacientes.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Solo el Admin podrá listar por id y a todos los usuarios de la lista. Por otra parte, también será solo competencia del Admin la consulta de las citas pasadas.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Diagrama de la base de datos 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licencia 
 
-### Code Splitting
+Este proyecto ha sido realizado por Elena Sánchez de la Blanca y está sujeto a la licencia MIT. Para obtener más información, por favor diríjase al archivo LICENSE que encontrará adjunto. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
