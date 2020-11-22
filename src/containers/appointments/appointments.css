@@ -1,0 +1,22 @@
+.addAppntm{
+    width: 10em;
+    height: 10em;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.addCard{
+    
+    background-color: rgba(42, 158, 139, 0.411);
+    margin-right: 4em;
+    
+}
+
+.cardTitle{
+    background-color:  rgba(42, 158, 139, 0.411);
+}

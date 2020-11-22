@@ -16,12 +16,18 @@ const Home = () => {
             <div>
                 <div className="datosClinica">
                     <img src={sala} className="sala1" />
-                    {/* esto mejor en card */}
-                    <div>
+                    
+                    <div className="cardDiv">
                         <Card title="Nuestros servicios" style={{ width: 300 }}>
-                            <p>Card content</p>
-                            <p>Card content</p>
-                            <p>Card content</p>
+                            <p>Ortodoncia</p>
+                            <p>Implantes</p>
+                            <p>Especialista maxilofacial</p>
+                            <p>Blanqueamiento</p>
+                        </Card>
+                        <Card title="Sobre nosotros" style={{ width: 300 }}>
+                            <p>Más de 25 años de experiencia</p>
+                            <p>C/Mayor 30, 1B</p>
+                            <p>Teléfono 918802560</p>
                         </Card>
 
                     </div>

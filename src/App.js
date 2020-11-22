@@ -4,10 +4,13 @@ import Login from './containers/login/login';
 import Appointment from './containers/appointments/appointment';
 import Register from './containers/register/register';
 import Home from './containers/home/home';
+import AddAppntm from './containers/appointments/addAppointment';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 function App() {
- 
+  const [user, setUser] = useState(null);
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -18,6 +21,7 @@ function App() {
           <Route path="/appointment" component={Appointment} exact />
           <Route path="/home" component={Home} exact />
           <Route path="/register" component={Register} exact/>
+          <Route path="/addappointment" component={AddAppntm} exact/>
 
           {/* Arranca la página desde aquí. Tiene que estar al final para no sobreescribir */}
           <Link to="/home" component={Home} exact></Link> 

@@ -3,6 +3,13 @@
     height: 20em;
 }
 
+.cardDiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45%;
+}
+
+
 .sala1{
     width: 20em;
     display: flex;

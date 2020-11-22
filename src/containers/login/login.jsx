@@ -30,6 +30,7 @@ const Login = (props) => {
       await axios.post('http://localhost:3200/customers/login', login)
         .then(res => {
           localStorage.setItem('user',res.data.user.id)
+          localStorage.setItem('username',res.data.user.name)
           notification.success({ message: 'Logged in' })
           history.push('/appointment')
         }).catch(err => {
