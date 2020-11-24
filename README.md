@@ -14,8 +14,8 @@ Al arrancar el servidor y la aplicación podrá ver que se abre la página por e
 
 En caso de no tener usuario, podemos dirigirnos al botón **register** que está situado en la esquina superior derecha, en la barra de navegación. Nos pedirá una serie de datos para registrarnos. Puede introducirlos.
 Sin embargo, para obtener una experiencia mejor, recomendamos utilizar uno de los usuarios que ya vienen registrados en el botón **Login**.
-	Mail: **ele.sp@hotmail.com**
-	Contraseña: **pruebaPassword**
+	Mail: **pruebaguest@guest.com**
+	Contraseña: **12345**
 
 Una vez enviado este formulario, nos aparecerá una nueva página de citas con dos tarjetas: añadir cita y ver las pendientes.
 En la página de añadir cita encontramos un calendario y un desplegable con los servicios de los que dispone la clínica.
