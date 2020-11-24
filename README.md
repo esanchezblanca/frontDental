@@ -14,6 +14,8 @@ Al arrancar el servidor y la aplicación podrá ver que se abre la página por e
 
 En caso de no tener usuario, podemos dirigirnos al botón **register** que está situado en la esquina superior derecha, en la barra de navegación. Nos pedirá una serie de datos para registrarnos. Puede introducirlos.
 Sin embargo, para obtener una experiencia mejor, recomendamos utilizar uno de los usuarios que ya vienen registrados en el botón **Login**.
+
+
 	Mail: **pruebaguest@guest.com**
 	Contraseña: **12345**
 
