@@ -16,8 +16,8 @@ En caso de no tener usuario, podemos dirigirnos al botón **register** que está
 Sin embargo, para obtener una experiencia mejor, recomendamos utilizar uno de los usuarios que ya vienen registrados en el botón **Login**.
 
 
-	Mail: **pruebaguest@guest.com**
-	Contraseña: **12345**
+	Mail: pruebaguest@guest.com
+	Contraseña: 12345
 
 Una vez enviado este formulario, nos aparecerá una nueva página de citas con dos tarjetas: añadir cita y ver las pendientes.
 En la página de añadir cita encontramos un calendario y un desplegable con los servicios de los que dispone la clínica.
