@@ -9,6 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:3000",
+            "deploy": "npm run build&&gh-pages -d build",
             "webRoot": "${workspaceFolder}"
         }
     ]
